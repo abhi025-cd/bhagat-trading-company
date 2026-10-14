@@ -21,7 +21,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -121,10 +121,11 @@
         <li><a href="#network" class="nav-item">Logistics</a></li>
         <li><a href="#about" class="nav-item">About</a></li>
         <li><a href="#inquiry" class="nav-item">Contact</a></li>
+        <li class="mobile-menu-cta"><a href="#inquiry" class="btn btn-dark-pill mobile-inquire-btn">Inquire Now</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="#inquiry" class="btn btn-dark-pill">Inquire Now</a>
+        <a href="#inquiry" class="btn btn-dark-pill nav-inquire-btn">Inquire Now</a>
         <a href="https://wa.me/919359573798" target="_blank" rel="noopener noreferrer" class="nav-icon-btn"
           aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
           <svg viewBox="0 0 24 24" class="svg-icon">
@@ -1050,15 +1051,20 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Widget -->
-  <a href="https://wa.me/919359573798?text=Hello%20Shubham%20Bhagat,%20I%20would%20like%20to%20inquire%20about%20wholesale%20produce%20rates."
-    class="floating-whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp Trade Desk">
-    <span class="wa-dot"></span>
-    <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true">
+  <!-- Floating WhatsApp Live Trade Desk Widget -->
+  <a href="https://wa.me/919359573798?text=Hello%2C%20I'm%20interested%20in%20wholesale%20agricultural%20produce.%20Please%20share%20your%20product%20availability%20and%20pricing."
+    class="floating-whatsapp-pill" target="_blank" rel="noopener noreferrer"
+    aria-label="WhatsApp Trade Desk: Wholesale enquiries welcome. Click to chat on WhatsApp"
+    title="WhatsApp Trade Desk">
+    <span class="wa-dot" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" class="wa-icon" aria-hidden="true" focusable="false">
       <path
         d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.48 2.025 14.053.99 11.53.99c-5.442 0-9.87 4.372-9.874 9.802-.001 1.774.475 3.505 1.377 5.028l-.946 3.456 3.56-.922zm11.367-7.64c-.31-.155-1.838-.907-2.122-1.01-.285-.104-.492-.155-.7.156-.207.31-.8.156-1.008.414-.207.258-.414.288-.724.133-.31-.155-1.31-.483-2.495-1.54-.922-.823-1.543-1.84-1.724-2.15-.18-.31-.02-.477.136-.63.14-.14.31-.36.465-.54.156-.18.207-.31.31-.517.104-.207.052-.39-.026-.543-.078-.155-.7-1.688-.957-2.31-.25-.6-.52-.52-.71-.53-.183-.01-.393-.01-.602-.01-.21 0-.55.08-.837.396-.288.31-1.1 1.074-1.1 2.622 0 1.548 1.127 3.042 1.282 3.25.155.207 2.217 3.385 5.37 4.747.75.324 1.336.518 1.792.663.753.24 1.437.206 1.977.126.6-.09 1.837-.75 2.096-1.44.258-.69.258-1.28.18-1.4-.078-.12-.284-.225-.595-.38z" />
     </svg>
-    <span class="wa-label">WhatsApp Trade Desk</span>
+    <div class="wa-text-group">
+      <span class="wa-label">WhatsApp Trade Desk</span>
+      <span class="wa-sub">Wholesale enquiries welcome</span>
+    </div>
   </a>
 
   <!-- Modal Notification / Feedback Toast -->
